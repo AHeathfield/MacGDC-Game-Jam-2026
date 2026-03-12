@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dca4rp2af4etb"]
 
-[ext_resource type="PackedScene" path="res://Scenes/player.tscn" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://cyqmtx5cbpwm8" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="Texture2D" uid="uid://dqv22rh3ekem3" path="res://icon.svg" id="2_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://dv1cek8x54qm0" path="res://checkerboard.jpg" id="3_8gbba"]
 [ext_resource type="Texture2D" uid="uid://jk7v4k3wtfj4" path="res://GameJam2026_test_walls.png" id="4_jjvhh"]
