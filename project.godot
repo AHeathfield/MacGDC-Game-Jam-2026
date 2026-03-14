@@ -15,6 +15,10 @@ run/main_scene="uid://dca4rp2af4etb"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+HighLevelNetworkHandler="*uid://bwej6s1vmlegl"
+
 [display]
 
 window/stretch/mode="viewport"

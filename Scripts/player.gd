@@ -4,10 +4,16 @@ class_name Player extends CharacterBody2D
 @onready var movement_component: MovementComponent = %MovementComponent
 @onready var health_component: HealthComponent = %HealthComponent
 
+func _enter_tree() -> void:
+	set_multiplayer_authority(name.to_int())
+
 func _ready() -> void:
 	health_component.died.connect(_on_died)
 
 func _physics_process(delta: float) -> void:
+	# This ensures that the code below is only run by the correct client
+	if !is_multiplayer_authority(): return
+	
 	# Read Controls
 	input_component.update()
 	
